@@ -57,6 +57,10 @@ export class ICPWebViewProvider implements WebviewViewProvider {
     });
   }
 
+  public postMessage(message: any) {
+    this._view?.webview.postMessage(message);
+  }
+
   /**
    * Defines and returns the HTML that should be rendered within the webview panel.
    *

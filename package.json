@@ -19,10 +19,22 @@
         {
           "id": "canisters",
           "name": "Canisters",
-          "type": "webview"
+          "type": "webview",
+          "when": "icp.showExplorer"
+        },
+        {
+          "id": "welcome",
+          "name": "Welcome",
+          "when": "!icp.showExplorer"
         }
       ]
     },
+    "viewsWelcome": [
+      {
+        "view": "welcome",
+        "contents": "No ICP project found [learn more](https://www.npmjs.com/).\n[Initialize New Project](command:nodeDependencies.addEntry)"
+      }
+    ],
     "viewsContainers": {
       "activitybar": [
         {
